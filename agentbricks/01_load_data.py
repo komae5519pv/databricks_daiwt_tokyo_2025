@@ -46,18 +46,18 @@ DBDemos.download_file_from_git(
     path="/agentbricks/_data/_binary/_pdf/"
 )
 
-# Lunch画像をダウンロード
-DBDemos.download_file_from_git(
-    dest=f"/Volumes/{MY_CATALOG}/{MY_SCHEMA}/{MY_VOLUME}/binary/image/lunch",
-    owner="komae5519pv",
-    repo="databricks_daiwt_tokyo_2025",
-    path="/agentbricks/_data/_binary/_image/_lunch/"
-)
+# # Lunch画像をダウンロード
+# DBDemos.download_file_from_git(
+#     dest=f"/Volumes/{MY_CATALOG}/{MY_SCHEMA}/{MY_VOLUME}/binary/image/lunch",
+#     owner="komae5519pv",
+#     repo="databricks_daiwt_tokyo_2025",
+#     path="/agentbricks/_data/_binary/_image/_lunch/"
+# )
 
-# Taxi画像をダウンロード
-DBDemos.download_file_from_git(
-    dest=f"/Volumes/{MY_CATALOG}/{MY_SCHEMA}/{MY_VOLUME}/binary/image/taxi",
-    owner="komae5519pv",
-    repo="databricks_daiwt_tokyo_2025",
-    path="/agentbricks/_data/_binary/_image/_taxi/"
-)
+# # Taxi画像をダウンロード
+# DBDemos.download_file_from_git(
+#     dest=f"/Volumes/{MY_CATALOG}/{MY_SCHEMA}/{MY_VOLUME}/binary/image/taxi",
+#     owner="komae5519pv",
+#     repo="databricks_daiwt_tokyo_2025",
+#     path="/agentbricks/_data/_binary/_image/_taxi/"
+# )

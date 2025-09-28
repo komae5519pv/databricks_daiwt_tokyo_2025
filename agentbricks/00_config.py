@@ -1,7 +1,7 @@
 # Databricks notebook source
 # カタログ情報
-MY_CATALOG = "komae_demo_v4"              # ご自分のカタログ名に変更してください
-MY_SCHEMA = "bricksmart"
+MY_CATALOG = "komae_demo_v3"              # ご自分のカタログ名に変更してください
+MY_SCHEMA = "agentbricks_extract_info"
 MY_VOLUME = "raw"
 
 # ベクターサーチエンドポイント
@@ -24,15 +24,15 @@ spark.sql(f"USE SCHEMA {MY_SCHEMA}")
 
 # ボリュームのサブディレクトリ作成
 dbutils.fs.mkdirs(f"/Volumes/{MY_CATALOG}/{MY_SCHEMA}/{MY_VOLUME}/binary")
-dbutils.fs.mkdirs(f"/Volumes/{MY_CATALOG}/{MY_SCHEMA}/{MY_VOLUME}/binary/image/taxi")
-dbutils.fs.mkdirs(f"/Volumes/{MY_CATALOG}/{MY_SCHEMA}/{MY_VOLUME}/binary/image/lunch")
+# dbutils.fs.mkdirs(f"/Volumes/{MY_CATALOG}/{MY_SCHEMA}/{MY_VOLUME}/binary/image/taxi")
+# dbutils.fs.mkdirs(f"/Volumes/{MY_CATALOG}/{MY_SCHEMA}/{MY_VOLUME}/binary/image/lunch")
 dbutils.fs.mkdirs(f"/Volumes/{MY_CATALOG}/{MY_SCHEMA}/{MY_VOLUME}/binary/pdf")
-dbutils.fs.mkdirs(f"/Volumes/{MY_CATALOG}/{MY_SCHEMA}/{MY_VOLUME}/feedbacks")
+# dbutils.fs.mkdirs(f"/Volumes/{MY_CATALOG}/{MY_SCHEMA}/{MY_VOLUME}/feedbacks")
 
 print(f"MY_CATALOG: {MY_CATALOG}")
 print(f"MY_SCHEMA: {MY_SCHEMA}")
 print(f"MY_VOLUME: {MY_VOLUME}")
-print(f"/Volumes/{MY_CATALOG}/{MY_SCHEMA}/{MY_VOLUME}/binary/image/taxi")
-print(f"/Volumes/{MY_CATALOG}/{MY_SCHEMA}/{MY_VOLUME}/binary/image/lunch")
+# print(f"/Volumes/{MY_CATALOG}/{MY_SCHEMA}/{MY_VOLUME}/binary/image/taxi")
+# print(f"/Volumes/{MY_CATALOG}/{MY_SCHEMA}/{MY_VOLUME}/binary/image/lunch")
 print(f"/Volumes/{MY_CATALOG}/{MY_SCHEMA}/{MY_VOLUME}/binary/pdf")
-print(f"/Volumes/{MY_CATALOG}/{MY_SCHEMA}/{MY_VOLUME}/feedbacks")
+# print(f"/Volumes/{MY_CATALOG}/{MY_SCHEMA}/{MY_VOLUME}/feedbacks")

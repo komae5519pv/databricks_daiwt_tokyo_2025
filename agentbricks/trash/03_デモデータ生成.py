@@ -10,8 +10,8 @@
 
 # DBTITLE 1,ai_query実行フラグ設定
 # ai_query 実行フラグ
-# RUN_AI_QUERY_FLG = True # 実行する
-RUN_AI_QUERY_FLG = False # 実行しない
+RUN_AI_QUERY_FLG = True # 実行する
+# RUN_AI_QUERY_FLG = False # 実行しない
 
 # COMMAND ----------
 
